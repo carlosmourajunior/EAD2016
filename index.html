@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta content="Projeto MDL">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.teal-green.min.css" />
+
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+
+
+    <!-- Square card -->
+    <style>
+    .demo-card-square.mdl-card {
+      width: 320px;
+      height: 320px;
+    }
+    .mdl-card__title-text {
+      color: #009688;
+    }
+
+
+    .demo-card-image.mdl-card {
+      width: 256px;
+      height: 256px;
+      background: url('http://www.hadooptrainingbangalore.in/wp-content/uploads/2016/03/236f58b0-fe13-4a06-b291-2dc9a62ef234.jpg') center / cover;
+    }
+    .demo-card-image > .mdl-card__actions {
+      height: 52px;
+      padding: 16px;
+      background: rgba(0, 0, 0, 0.2);
+    }
+    .demo-card-image__filename {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Escola da NET</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="">Sobre o autor</a>
+            <a class="mdl-navigation__link" href="">Assuntos</a>
+            <a class="mdl-navigation__link" href="">Videos</a>
+            <a class="mdl-navigation__link" href="">Tutoriais</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Projeto MDL</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Sobre o Autor</a>
+          <a class="mdl-navigation__link" href="">Assuntos</a>
+          <a class="mdl-navigation__link" href="">Videos</a>
+          <a class="mdl-navigation__link" href="">Tutoriais</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+
+
+            <div id="results"></div>
+
+
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">
+                    <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title mdl-card--expand" style="color: #fff; background:
+                        url('html-on-sheet.jpg') bottom right 5% no-repeat #46B6AC;">
+
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        Assista aos vídeos sobre HTML e aprenda como se tornar um desenvolvedor WEB Front-End
+                      </div>
+                      <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                          HTML - 12 vídeos
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">
+                    <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title mdl-card--expand" style="color: #fff; background:
+                        url('css.png') bottom right 15% no-repeat #46B6AC;">
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aenan convallis.
+                      </div>
+                      <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                          CSS - 10 Vídeos
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">
+                    <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title mdl-card--expand">
+                        <h2 class="mdl-card__title-text">Javascript</h2>
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aenan convallis.
+                      </div>
+                      <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                          View Updates
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+      </main>
+    </div>
+
+    <div id="login-container" class="pre-auth">
+      This application requires access to your YouTube account.
+      Please <a href="#" id="login-link">authorize</a> to continue.
+    </div>
+    <div id="video-container"></div>
+    <div class="button-container">
+      <button id="prev-button" class="paging-button" onclick="previousPage();">Previous Page</button>
+      <button id="next-button" class="paging-button" onclick="nextPage();">Next Page</button>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="auth.js"></script>
+    <script type="text/javascript" src="my_uploads.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+
+
+</body>
+
+</html>

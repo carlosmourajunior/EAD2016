@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="Projeto MDL">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue-yellow.min.css" />
+    
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <!-- Table -->
+    <style>
+	.demo-list-three {
+      width: 650px;
+    }       
+	</style>
+    
+	<!-- Icons -->
+	<style>
+	span.mdl-badge::after {
+	  background: #2196f3 !important;
+	  color: #FFFFFF !important;
+	}
+        
+    .mdl-tooltip.is-active {
+        animation: none;
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+    </style>
+    
+    
+</head>
+<body>
+    
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Primeiro Projeto</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a id="autor" class="mdl-navigation__link" href="autor.html">O Autor</a>
+            <a class="mdl-navigation__link" href="">HTML</a>
+            <a class="mdl-navigation__link" href="">CSS</a>
+            <a class="mdl-navigation__link" href="">Javascript</a>
+          </nav>
+        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+            for="autor">
+          <li class="mdl-menu__item">Curriculo</li>
+          <li class="mdl-menu__item">Portifólio</li>
+          <li class="mdl-menu__item">Apresentação</li>
+        </ul>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Primeiro Projeto</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">O Autor</a>
+            <a class="mdl-navigation__link" href="">HTML</a>
+            <a class="mdl-navigation__link" href="">CSS</a>
+            <a class="mdl-navigation__link" href="">Javascript</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                  <article>
+                      <header>
+                        <h3 id="teste">O Autor</h3>
+                          <div class="mdl-tooltip" for="teste">TESTE DE TOOLTIP</div>
+                          </header>
+                          <p>Milton Bassani Júnior, 26 anos,  é servidor público federal e publicitário. Trabalha no processo de Portal e Publicações da Agência Nacional de Telecomunicações (Anatel) e atualmente está desenvolvendo a nova intranet da Agência em ambiente SharePoint. Saiba um pouco mais sobre o Bassani abaixo.</p>
+                  </article>
+              </div>
+            </div>
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                    <table class="mdl-data-table mdl-js-data-table" width="99%">
+                      <thead>
+                        <tr>
+                          <th class="mdl-data-table__cell--non-numeric"><span class="mdl-badge" data-badge="★">Formação</span></th>
+                          <th class="mdl-data-table__cell--non-numeric">Principais Habilidades</th>
+                          </tr>
+                      </thead>
+                    <tbody>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">Graduação em Comunicação Social - Publicidade e Propaganda<br>
+                Instituto de Educação Superior de Brasília - IESB</td>                      
+                        <td class="mdl-data-table__cell--non-numeric">                          
+                          <div id="01" class="icon material-icons">settings</div>                          
+                          <span class="mdl-tooltip" for="01">Gestão de Projetos</span>                          
+                          <div id="02" class="icon material-icons">mouse</div>                            
+                          <div class="mdl-tooltip" for="02">Webdesign</div>
+                          <div id="03" class="icon material-icons">palette</div>                        
+                          <div class="mdl-tooltip" for="03">Design Gráfico</div>
+                          <div id="04" class="icon material-icons">wallpaper</div>                        
+                          <div class="mdl-tooltip" for="04">Diagramação</div>                        
+                        </td>                        
+                        </tr>
+                  </tbody>
+</table>
+<br>
+<br>
+<table class="mdl-data-table mdl-js-data-table" width="99%">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric"><span class="mdl-badge" data-badge="3">Experiência Profissional</span></th>
+      <th class="mdl-data-table__cell--non-numeric">Período</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Agência Nacional de Telecomunicações - Anatel<br>
+Processo de Portal e Publicações
+<td class="mdl-data-table__cell--non-numeric">Agosto/2015 - Até o momento</td></tr>
+      <tr><td class="mdl-data-table__cell--non-numeric">Webdesigner Freelancer<br>
+Criação de páginas na internet para empresas de saúde, automóveis e eventos
+<td class="mdl-data-table__cell--non-numeric">Maio/2010 - Até o momento</td></tr>
+      
+<tr><td class="mdl-data-table__cell--non-numeric">FISK Centro de Ensino<br>
+Professor de Língua Inglesa<br>
+<td class="mdl-data-table__cell--non-numeric">Julho/2009 - Julho/2011</td></tr>
+      
+  </tbody>
+</table>
+<br>
+<br>
+<table class="mdl-data-table mdl-js-data-table" width="99%">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric"><span class="mdl-badge" data-badge="7">Cursos e Congressos</span></th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Design Publicitário (90 horas)<br>
+MD8 Propaganda</td></tr>
+      <tr><td class="mdl-data-table__cell--non-numeric">Joomla Day Brasil (19 horas)<br>
+Comunidade Joomla Calango</td></tr>
+      
+<tr><td class="mdl-data-table__cell--non-numeric">4o Almanaque de Criação (16 horas)<br>
+Doisnovemeia Publicidade</td></tr>
+      
+      <tr><td class="mdl-data-table__cell--non-numeric">Acessibilidade Digital: Lançamento da Suíte VLibras (7 horas)<br>
+Ministério do Planejamento, Orçamento e Gestão</td></tr>
+      
+      <tr><td class="mdl-data-table__cell--non-numeric">Gestão e Fiscalização de Contratos Administrativos (40 horas)<br>
+Escola Nacional de Administração Pública - ENAP</td></tr>
+      
+            <tr><td class="mdl-data-table__cell--non-numeric">Gestão da Informação para Transparência (4 horas)<br>
+Agência Nacional de Telecomunicações - Anatel</td></tr>
+      
+                  <tr><td class="mdl-data-table__cell--non-numeric">Operações do SEI - Sistema Eletrônico de Informações (4 horas)<br>
+Agência Nacional de Telecomunicações - Anatel</td></tr>      
+  </tbody>
+</table>
+<br>
+<br>
+<table class="mdl-data-table mdl-js-data-table" width="99%">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric"><span class="mdl-badge" data-badge="2">Idiomas</span></th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Proficiência em Inglês<br>
+FISK Centro de Ensino</td></tr>
+      <tr><td class="mdl-data-table__cell--non-numeric">Espanhol Intermediário<br>
+FISK Centro de Ensino</td></tr>
+      
+  </tbody>
+</table>
+<br>
+<br>
+<table class="mdl-data-table mdl-js-data-table" width="99%">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric"><span class="mdl-badge" data-badge="3">Experiência Internacional</span></th>
+      <th class="mdl-data-table__cell--non-numeric">Período</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Curso de Inglês no Canadá (180 horas)<br>
+International Language Academy of Canada - ILAC
+<td class="mdl-data-table__cell--non-numeric">Dezembro/2008 - Janeiro/2009</td></tr>
+      <tr><td class="mdl-data-table__cell--non-numeric">Intercâmbio na Argentina<br>
+3 meses
+<td class="mdl-data-table__cell--non-numeric">Fevereiro/2013 - Abril/2013</td></tr>      
+  </tbody>
+</table>
+            </div>
+          </div>
+          </div>
+    </main>
+        
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">
+              Mini-footer Heading
+            </div>
+            <ul class="mdl-mini-footer__link-list">
+              <li><a href="">Link 1</a></li>
+              <li><a href="">Link 2</a></li>
+              <li><a href="">Link 3</a></li>
+            </ul>
+          </div>
+        </footer>
+        
+    </div>
+    
+</body>
+
+</html>

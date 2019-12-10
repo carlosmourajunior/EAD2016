@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exemplos de uso do CSS</title>
+    <link rel="stylesheet" href="CSS/estilo.css" type="text/css">
+    <style>
+        
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: none;
+        }
+
+        th{
+            background-color: #000;
+            color: #fff;
+        }
+
+        /*Coloca cor de fundo nas linhas pares (#F3F3F3) */
+        tr:nth-of-type(even){
+            background-color: #F3F3F3;
+        }
+
+        /*Coloca cor de fundo nas linhas ímpares (#ddd) */
+        tr:nth-of-type(odd){
+            background-color: #ddd;
+        }
+
+        /*Alinha as colunas no centro, exceto a primeira*/
+        td:nth-child(n+2){
+            text-align: center;
+        }
+
+        /*Coloca o texto em negrito na última linha */
+        tr:last-child{
+            font-weight: bolder;
+        }
+
+        /*Aumenta a fonte da última coluna, na última linha */
+        tr:last-child td:last-child{
+            font-size:24px;
+        }
+
+        /*Muda a cor da fonte para verde no último elemento da penúltima linha */
+        tr:nth-last-child(2) td{
+            color: green;
+        }
+
+        /*Coloca as 3 últimas linhas com alinhamento à direita.*/
+        tr:nth-last-child(-n+3) td{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>     
+   
+    <table>
+	   <tr>
+		  <th>Item</th>
+		  <th>Preço</th>
+		  <th>Quantidade</th>
+		  <th>Total</th>
+	   </tr>
+	   <tr>
+		  <td>Boné</td>
+		  <td>R$10.00</td>
+		  <td>5</td>
+		  <td>R$50.00</td>
+	   </tr>
+	   <tr>
+		  <td>Camiseta</td>
+		  <td>R$20.00</td>
+		  <td>5</td>
+		  <td>R$100.00</td>
+	   </tr>
+	   <tr>
+		  <td>Meia</td>
+		  <td>R$9.00</td>
+		  <td>4</td>
+		  <td>R$36.00</td>
+	   </tr>
+	   <tr>
+		  <td colspan="3">Sub-total</td>
+		  <td>R$186.00</td>
+	   </tr>
+	   <tr>
+		  <td colspan="3">Frete</td>
+		  <td>R$12.00</td>
+	   </tr>
+	   <tr>
+		  <td colspan="3">Total</td>
+		  <td>R$198.00</td>
+	   </tr>
+	</table>
+
+
+    
+</body>
+
+</html>

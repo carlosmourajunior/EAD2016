@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="Projeto MDL">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue-yellow.min.css" />
+    
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <!-- Square card -->
+    <style>
+    .demo-card-square.mdl-card {
+      width: 320px;
+      height: 320px;
+    }
+    .demo-card-square > .mdl-card__title {
+        color: #fff;
+        background-size: contain;
+    }
+    .html{
+      background: url('assets/img/html5.jpg');
+    }
+        
+    .css{
+      background: url('assets/img/css3.jpg');
+        
+    }
+        
+    .javascript{
+      background: url('assets/img/javascript.jpg');
+    }
+        
+    </style>
+    
+    
+</head>
+<body>
+    
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Primeiro Projeto</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a id="autor" class="mdl-navigation__link" href="curriculo.html">O Autor</a>
+            <a class="mdl-navigation__link" href="">HTML</a>
+            <a class="mdl-navigation__link" href="">CSS</a>
+            <a class="mdl-navigation__link" href="">Javascript</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Primeiro Projeto</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="curriculo.html">O Autor</a>
+            <a class="mdl-navigation__link" href="">HTML</a>
+            <a class="mdl-navigation__link" href="">CSS</a>
+            <a class="mdl-navigation__link" href="">Javascript</a>
+        </nav>
+        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+            for="autor">
+          <li class="mdl-menu__item">Curriculo</li>
+          <li class="mdl-menu__item">Portifólio</li>
+          <li class="mdl-menu__item">Apresentação</li>
+        </ul>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+                  <article>
+                      <header>
+                        <h3>Primeiro Projeto HTML/CSS/Javascript</h3>
+                          </header>
+                          <p>Este projeto é para que o aluno tenha ideia da facilidade de se desenvolver projetos com aparência profissional quando se usa
+                          as ferramentas certas. O Google está cada mais desenvolvendo ferramentas e recursos para desenvolvedores e isso está tornando o 
+                          desenvolvimento de sites e sistemas WEB ainda mais prático e profissional.</p>
+                  </article>
+              </div>
+            </div>
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet">
+                    <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title mdl-card--expand html">
+                        <h2 class="mdl-card__title-text">HTML5</h2>
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        Fique por dentro das novidades do HTML5, e as diferenças para a antiga versão.
+                      </div>
+                      <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                          Leia Mais
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet">
+                    <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title mdl-card--expand css">
+                        <h2 class="mdl-card__title-text">CSS3</h2>
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        Saiba tudo sobre as novas possibilidades trazidas por essa nova versão.
+                      </div>
+                      <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                          Leia Mais
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet">
+                    <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title mdl-card--expand javascript">
+                        <h2 class="mdl-card__title-text">Javascript</h2>
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        Saiba o poder desta linguagem e como ela tem sido usada no desenvolvimento de sites.
+                      </div>
+                      <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                          Leia Mais
+                        </a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </main>
+        
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">
+              Mini-footer Heading
+            </div>
+            <ul class="mdl-mini-footer__link-list">
+              <li><a href="">Link 1</a></li>
+              <li><a href="">Link 2</a></li>
+              <li><a href="">Link 3</a></li>
+            </ul>
+          </div>
+        </footer>
+        
+    </div>
+    
+</body>
+
+</html>
